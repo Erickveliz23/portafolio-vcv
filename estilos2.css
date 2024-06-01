@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;500 & display=swap');
+
+:root{
+    --morado:#756AB6;
+    --melon:#FFECD6;
+   --degradado:linear-gradient(90deg,var(--morado),var(--melon));
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+
+}
+
+*::selection{
+    background: var(--melon);
+    color: white;
+}
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+body{
+    background: url(img2/fondo.png);
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: #DCBFFF;
+    font-size: 1.8rem;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+.heading{
+    text-align: center;
+    background: var(--morado);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    background-color: #DCBFFF;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+    }
+    header .logo{
+        font-size: 3rem;
+        color: var(--black);
+   }
+    header .logo span{
+        color: var(--morado);
+    }
+
+    header .navbar a{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        color: var(--morado);
+    }
+     header .navbar a:hover{
+        color:var(--black);
+     }
+
+
+     header input{
+        display: none;
+     }
+
+     header label{
+        font-size: 3rem;
+        color: var(--black);
+        cursor: pointer;
+        visibility: hidden ;
+        opacity: 0;
+
+     }
+     .Inicio{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background: url(img2/fondo.png) no-repeat;
+       background-size: cover;
+       background-position: center;
+       
+    }
+    .Inicio .image img{
+      width: 40vw;
+      animation: float 3s linear infinite;
+    }
+    @keyframes float{  
+      0%,100%{ 
+         tranform: translateY(0rem);
+      }
+      50%{
+        transform: translateY(-3.5rem);
+      }
+     }
+     .Inicio .content h3{
+       font-size: 5.5rem;
+       color: var(--black);
+       text-transform: uppercase;
+     }
+     .Inicio .content h3 span{
+       color: #8A33FF;
+       text-transform: uppercase;
+      
+     }
+
+     .Inicio .content p{
+       font-size: 1.7rem;
+       color: var(--black);
+       padding: 1rem 0;
+      }
+
+     .Detalles .caja-contenedor{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+     .Detalles .caja-contenedor .caja{
+         flex: 1 1 30rem;
+         background:  #F5E6FA;
+         border-radius: .5rem;
+         border: .1rem solid rgba(0,0,0,.2);
+         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+         margin: 1.5rem;
+         padding: 3rem 2rem;
+         text-align: center;
+         transition: .2s linear;
+      
+      }
+
+     .Detalles.caja-contenedor .caja img{
+        height: 15rem;
+      }
+
+    .Detalles  .caja-contenedor .caja h3{
+       font-size: 2rem;
+       color: #333;
+       padding-top: 1rem;
+    
+     }
+
+     .Detalles .caja-contenedor .caja p{
+       font-size: 1.3rem;
+       color: #070309;
+       padding: 1rem 0;
+     }
+     .Intereses{
+       background:url(../img2/fondo.png) no-repeat;
+       background-size: cover;
+       background-position: center; 
+       padding: 3rem;
+       
+     }
+     .Intereses .columna{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+     .Intereses .columna .image{
+       flex: 1 1 40rem;
+     }
+     .Intereses .columna .image img{
+       width: 80%;
+       
+     }
+     .Intereses .columna .content{
+       flex: 1 1 80rem;
+       
+     }
+    .Intereses .columna .content h3{
+      font-size: 3rem;
+      color: #8A33FF;
+    }
+    .Intereses .columna .content p{
+      font-size: 1.5rem;
+      color: var(--black);
+      padding: 1rem 0;
+    }
+    .Intereses .columna .content .bottons a:last-child{
+      margin-left: 2rem;
+      }
+    .suscribete{
+      text-align: center;
+      padding: 5rem 1rem;
+      background: url(../img2/fondo2.png) no repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .suscribete h3{
+      color: var(--black);
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+    .suscribete p{
+      color: var(--black);
+      font-size: 1.6rem;
+      margin: 2rem auto;
+      width: 70rem;
+    }
+    .suscribete form{
+      display: flex;
+      max-width: 70rem;
+      border: .2rem solid black;
+      padding: .5rem;
+      border-radius: 5rem;
+      margin: 2rem auto;
+      height: 5.5rem;
+    }
+
+    .suscribete form input[type="email"]{
+      padding: 0 2rem;
+      font-size: 1.7rem;
+      background: none;
+      width: 100%;
+      color: black;
+      text-transform: none;
+      background: none;
+    }
+    .suscribete form input[type="email"]::placeholder{
+      color: var(--morado);
+      text-transform: capitalize;
+      
+    }
+
+    .suscribete form input[type="submit"]{
+      background: #DCBFFF;
+      width: 20rem;
+      font-size: 1.7rem;
+      border-radius: 5rem;
+      cursor: pointer;
+    }
+    .suscribete form input[type="submit"]:hover{
+      color: var(--morado);
+    }
+
+    .Actividades .caja-contenedor{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+    .Actividades .caja-contenedor .caja{
+      background: #F5E6FA;
+      margin: 1rem;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      border: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      flex: 1 1 30rem;
+      border-radius: .5rem;
+    }
+    .Actividades .caja-contenedor .caja .fa-heart{
+      position: absolute;
+      top: 1.5rem;
+      right: 3rem;
+      font-size: 5rem;
+      color: #796292;
+      opacity: .3;
+    }
+    .Actividades .caja-contenedor .caja .user img{
+      border-radius: 50%;
+      object-fit: cover;
+      height: 8rem;
+      width: 8rem;
+      margin-top: 2rem;
+    }
+
+    .Actividades .caja-contenedor .caja .user h3{
+      color: #333;
+      font-size: 2rem;
+    }
+    .Actividades .caja-contenedor .caja .user .stars i{
+      color: var(--morado);
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+    .Actividades .caja-contenedor .caja .comentarios{
+      color: var(--black);
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    .Contactos{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 3rem;
+    }
+    .Contactos .image{
+      flex: 1 1 40rem;
+    }
+    .Contactos .image img{
+      width: 70%;
+      padding: 2rem;
+    }
+    .Contactos form{
+      flex: 1 1 40rem;
+      padding: 2rem 3rem;
+      border: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      border-radius: .5rem;
+      background: #F5E6FA;
+    }
+    .Contactos .heading{
+      text-align: left;
+      padding: 0;
+      padding-bottom: 2rem;
+    }
+    .Contactos form .inputcaja{
+      position: relative;
+    }
+    .Contactos form .inputcaja input, .Contactos form .inputcaja textarea{
+      width: 100%;
+      background: none;
+      color: var(--black);
+      margin: 1.5rem 0;
+      padding: .5rem 0;
+      font-size: 1.7rem;
+      border-bottom: .1rem solid rgba(0,0,0,.1);
+      text-transform: none;
+    }
+    .Contactos form .inputcaja textarea{
+      resize: none;
+      height: 13rem;
+    }
+    .Contactos form .inputcaja label{
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      font-size: 1.7rem;
+      color: var(--black);
+      transition: .2s linear;
+    }
+    .Contactos form .inputcaja input:focus ~ label,
+    .Contactos form .inputcaja input:valid ~ label,
+    .Contactos form .inputcaja textarea:focus ~ label,
+    .Contactos form .inputcaja textarea:valid ~ label{
+      top: -.5rem;
+      font-size: 1.5rem;
+      color: var(--morado);  
+    }
+    .footer{
+       padding-top: 3rem;
+      background: #DCBFFF;
+      background-size: cover;
+      background-position: center;
+    }
+    .footer .caja-contenedor{
+      display: flex;
+      flex-wrap: wrap;   
+    }
+    .footer .caja-contenedor .caja{
+      flex: 1 1 25rem;
+      margin: 2rem;
+    }
+    .footer .caja-contenedor .caja  h3{
+      font-size: 2.5rem;
+      padding: 1rem 0;
+      color: #493069;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+    }
+    .footer .caja-contenedor .caja p{
+      font-size: 1.5rem;
+      padding: .5rem 0;
+      color: var(--black);
+    }
+    .footer .caja-contenedor .caja a{
+      display: block;
+      font-size: 1.5rem;
+      padding: .5rem 0;
+      color: var(--black);
+    }
+    .footer .caja-contenedor .caja a:hover{
+      text-decoration: underline;
+    }
+    .footer .caja-contenedor .caja .info{
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .footer .caja-contenedor .caja .info i{
+      margin: .5rem 0;
+      margin-right: 1rem;
+      border-radius: 50%;
+      background: whitesmoke;
+      color: var(--black);
+      font-size: 1.8rem;
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      text-align: center;
+    }
+    .footer .creditos{
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: .1rem;
+      color: var(--black);
+      border-top: .1rem solid black;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+
+     @media(max-width:1400px){
+         html{
+            font-size: 55%;
+         }
+      }
+      @media(max-width:990px){
+        section{
+          padding: 0 3%;
+          padding-top: 7.5rem;
+          padding-bottom: 1rem;
+        }
+      }
+
+      @media(max-width:768px){
+        header label{
+            visibility: visible;
+            opacity: 1;
+        }
+        header .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: whitesmoke;
+            padding: 1rem 2rem;
+            border-top: .1rem solid rgba(0,0,0,.2);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            transition: .2s linear;
+        }
+
+        header .navbar a{
+            display: block;
+            margin: 2rem 0;
+            font-size: 2rem;
+        }
+
+        header input:checked ~ .navbar{
+            transform: scaleY(1);
+            opacity: 1;
+
+        }
+        header input:checked ~ label::before{
+            content:'\f00d';
+        } 
+
+       .Inicio{
+         flex-flow: column-reverse;
+       } 
+       .Inicio .image img{
+         width: 100%;
+       } 
+       .Inicio .content h3{
+         font-size: 4.5rem;
+       } 
+       .Inicio .content p{
+         font-size: 1.5rem;
+       }
+       .Intereses{
+         background-position: right;
+       }
+       .suscribete p{
+         width: auto;
+       }
+
+
+ 
+
+    }
+    @media(max-width:150px){
+        html{
+            font-size: 49%;
+        }
+      .Intereses .columna .bottons a{
+        width: 100%;
+        text-align: center;
+      }
+      .Intereses .columna .bottons a:last-child{
+        margin: 1rem 0;
+      }
+
+    }
